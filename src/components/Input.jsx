@@ -71,7 +71,7 @@ export default function UseAutocomplete() {
             const { key, ...optionProps } = getOptionProps({ option, index });
             return (
               <li key={key} {...optionProps}>
-                <Link to={'/login'}>{option.title}</Link>
+                <Link to={'/create'}>{option.title}</Link>
               </li>
             );
           })}

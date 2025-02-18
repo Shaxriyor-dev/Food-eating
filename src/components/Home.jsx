@@ -11,7 +11,6 @@ import Plus from "../assets/icon/Plus.png";
 import Minus from "../assets/icon/Minus.png";
 import sir from "../assets/imgs/sir.png";
 import loop from "../assets/imgs/lopp.png";
-import Button from "@mui/material/Button";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
@@ -34,9 +33,9 @@ function Home() {
   };
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
   const { cound, Setcound } = useState(0);
+   
   return (
     <div>
-      <Navbar />
       <Selexct />
       <section className="h-[100vh] bg-[#000a0f] text-white flex justify-center items-center">
         <div>
@@ -70,7 +69,7 @@ function Home() {
                     <img src={Minus} alt="Mius" />
                   </button>
                   <span className="text-[20px] font-bold font-[Roboto]">
-                    {cound} 0
+                    {cound}
                   </span>
                   <button>
                     <img src={Plus} alt="Plus" />
@@ -561,7 +560,6 @@ function Home() {
           Your purchase has been added to your card !
         </Alert>
       </Snackbar>
-      <Footer />
     </div>
   );
 }

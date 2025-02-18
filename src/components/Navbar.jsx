@@ -22,9 +22,9 @@ function Navbar() {
         </a>
         <Input />
         <div className="flex items-center gap-8">
-          <Box sx={{ "& button": { m: 1 } }}>
+          <Box  sx={{ "& button": { m: 1 } }}>
             <div>
-              <Button sx={{ fontFamily : 'Roboto' , fontSize : '16px' ,  height : '56px' , width : '216px' , background : '#750310' , gap : '5px' , justifyContent : 'center' , alignItems : 'center' , display : 'flex'}} variant="contained" size="large">
+              <Button onClick={()=> window.location.pathname = '/create'} sx={{ fontFamily : 'Roboto' , fontSize : '16px' ,  height : '56px' , width : '216px' , background : '#750310' , gap : '5px' , justifyContent : 'center' , alignItems : 'center' , display : 'flex'}} variant="contained" size="large">
                <img src={fors} alt="" />    Pedidos <span> {count}</span>
               </Button>
             </div>
